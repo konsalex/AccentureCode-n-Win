@@ -1,0 +1,19 @@
+<form id="login-modal" action="#" method="post" name="modal form">
+        {%csrf_token%}
+            <label for="frmNameA"> Task Name</label>
+            <input name="taskName" id="frmNameA" class="form-control" placeholder="Full name" required autocomplete="name">
+            
+            <label for="frmEmailA"> Email</label>
+            <input type="email" class="form-control" name="email" id="frmEmailA" placeholder="name@example.com" required autocomplete="email">
+            <label for="Job">Job</label>
+            
+            <select name="Job" class="form-control">
+                <option value="UX"> UX designer</option>
+                <option value="ProductDesigner"> Product Designer</option>
+                <option value="Marketeer"> Marketeer</option>
+                <option value="Other"> Other</option>
+            </select>
+            <label for="purpose">Purpose</label>
+            <input type="tel" class="form-control" name="purpose" id="purpose" placeholder=" Why?" required="true">
+            <button class="btn btn-color" type="submit" value="form" >Submit</button>
+        </form>
